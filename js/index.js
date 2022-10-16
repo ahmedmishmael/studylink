@@ -65,7 +65,7 @@ let points = 0;
 let pointsPercentage = ((points / 9) * 100).toFixed(2);
 let circlePercentage = pointsPercentage * 3.6;
 let circleColor;
-let countdown = 3;
+let countdown = 60;
 
 countdownNumberEl.textContent = countdown;
 
