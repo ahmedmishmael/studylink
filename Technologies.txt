@@ -1,0 +1,13 @@
+Html -- Html5 -- Css -- Css3 -- Js -- ((Bom & Dom))
+
+==>> View page source , Sources and Console --> To Get The Source Code of the Real Website.
+
+==>> Some Libraries & Plugins I used to make the Website more identical :
+
+-- Bootstrap 4 
+
+-- Animate.css
+
+-- Wow.js 
+
+-- Popper.js

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyLink - StudyLink</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="styles/all.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="styles/bootstrap.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/stylesheet.css" />
+</head>
+
+<body>
+  <div id="test">
+    <div class="container pb-1 d-flex justify-content-between">
+      <button id="start-btn" class="px-4">
+        <span id="err6"><span class="error-msg" style="bottom: -45px; left: 32px; width: 270px">Bravo! http is less
+            secure than https</span>http</span>://www.<span id="err7"><span class="error-msg"
+            style="bottom: -15px; left: 78px; width: 282px">Bravo! You've found a wrong
+            spelling</span>study1link</span>.govt.nz
+      </button>
+      <div id="countdown" class="mt-1">
+        <div id="countdown-number"></div>
+        <svg id="circle-container">
+          <circle id="circle" r="18" cx="20" cy="20"></circle>
+        </svg>
+      </div>
+      <div id="final-result-container">
+        <b style="font-size: xx-large; color: #FFF"></b>
+        <div id="final-result">
+          <span id="progress-value"></span>
+        </div>
+        <p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJz1kf2shgaRZSPHV4Lc9wtNyjdUIs3ctfPJIgE8Kmz4yFeg/viewform?vc=0&c=0&w=1&flr=0
+          " target="_blank" style="text-decoration: none; color: white; font-weight: bold">Click here</a>
+          to participate in the cybersecurity survey
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <form class="d-flex" role="search">
+          <input id="search-bar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button id="search-btn" type="button">
+            <img src="images/search.png" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+  <header class="mb-5">
+    <div id="header-top" class="py-4 container">
+      <span id="err5">
+        <span class="error-msg" style="width: 274px; top: -45px; left: 315px">Bravo! The image has a poor quality</span>
+        <img id="logo-2" src="images/logo2.png" />
+      </span>
+      <span id="header-btns">
+        <button><b class="m-2">A-Z</b></button>
+        <button><b class="m-2">Forms</b></button>
+      </span>
+    </div>
+    <div id="header-bottom" class="pt-3 container">
+      <span>
+        <ul class="mt-2">
+          <a>
+            <li class="me-2 active">
+              <img class="mb-2" src="images/home-icon.png" width="22px" height="18px" />
+            </li>
+          </a>
+          <a class="navlink">
+            <li class="me-2">Starting study</li>
+          </a>
+          <a class="navlink">
+            <li class="me-2">In study</li>
+          </a>
+          <a class="navlink">
+            <li class="me-2">Returning to study</li>
+          </a>
+          <a class="navlink">
+            <li class="me-2">Finished Studying</li>
+          </a>
+        </ul>
+      </span>
+      <button>Login</button>
+    </div>
+  </header>
+  <!-- section 1 -->
+  <section class="container mb-5">
+    <div class="row">
+      <div class="col-lg-8">
+
+        <marquee behavior="smooth" direction="ltr">
+          <p style="font-size: larger; font-weight: 500; padding: 30px;" class="mb-5">
+            <span id="err9">Click here to download the latest
+              app of stdylink to access and update your information .
+              <span class="error-msg" style="top: -45px; width: 290px; left: 45px">Bravo! You've found a wrong
+                spelling</span></span>
+          </p>
+        </marquee>
+
+        <p style="font-size: larger; font-weight: 500" class="mb-5">
+          We help you make informed choices about your student <br />
+          finance, how to
+          <span id="err1">aply
+            <span class="error-msg" style="top: -45px; width: 290px; left: 45px">Bravo! You've found a wrong
+              spelling</span></span>
+          for it and manage it online.
+        </p>
+
+        <div class="d-flex justify-content-between">
+          <div class="choice me-2 mb-2">
+            <p class="choice-heading">&nbsp; Starting<br />&nbsp; study</p>
+            <ul class="ms-4">
+              <li>Thinking about study</li>
+              <li>Paying for study</li>
+              <li>Apply</li>
+            </ul>
+            <p class="more ms-4"><a>More</a> »</p>
+          </div>
+          <div class="choice ms-2 mb-2">
+            <p class="choice-heading">&nbsp; In study</p>
+            <ul class="ms-4">
+              <li>Change for circumstances</li>
+              <li>Urgent costs</li>
+              <li>End of semester</li>
+            </ul>
+            <p class="more ms-4"><a>More</a> »</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-4">
+          <div class="choice me-2 mt-2">
+            <p class="choice-heading">
+              &nbsp; Returning to <br />&nbsp; study
+            </p>
+            <ul class="ms-4">
+              <li>Re-apply</li>
+              <li>Study break</li>
+              <li>Continuing study</li>
+            </ul>
+            <p class="more ms-4"><a>More</a> »</p>
+          </div>
+          <div class="choice ms-2 mt-2">
+            <p class="choice-heading">&nbsp; Finished <br />&nbsp; study</p>
+            <ul class="ms-4">
+              <li>Loan balance</li>
+              <li>Paying back your loan</li>
+              <li>Starting work</li>
+            </ul>
+            <p class="more ms-4"><a>More</a> »</p>
+          </div>
+        </div>
+      </div>
+      <!-- aside -->
+      <div class="col-lg-1"></div>
+      <div class="col-lg-3">
+        <aside class="pb-5 pt-3">
+          <div class="aside-header">
+            <img style="margin-left: 20px" src="images/online-services.png" />
+            <span class="ms-1 mt-1">Online <br />
+              Services</span>
+          </div>
+          <hr />
+          <a><button style="background-color: #97be0d">
+              <img class="mb-1" src="images/login.png" />
+            </button>
+            <p>MyStudyLink</p>
+          </a>
+
+          <hr />
+          <a><button style="background-color: #c23c32">
+              <img class="mb-1" src="images/apply.png" />
+            </button>
+            <p>
+              Apply online for <br />
+              first-time students
+            </p>
+          </a>
+
+          <hr />
+          <a><button style="background-color: #ff1654">
+              <img class="mb-1" src="images/connect.png" />
+            </button>
+            <p>
+              Send documents using <br />
+              Connect
+            </p>
+          </a>
+
+          <hr />
+          <a id="err2">
+            <span class="error-msg" style="top: -45px; left: -290px; width: 290px">
+              Bravo! You've found a wrong spelling</span>
+            <button style="background-color: #3852a3">
+              <img class="mb-1" src="images/check.png" />
+            </button>
+            <p>Eligiblty test</p>
+          </a>
+
+          <hr />
+          <a><button id="err3" style="background-color: darkred">
+              <span class="error-msg" style="top: -45px; left: -328px; width: 333px">
+                Bravo! The image doesn't match the content</span>
+              <img class="mb-1" src="images/realme-logo.png" />
+            </button>
+            <p>Manage your RealMe</p>
+          </a>
+
+          <hr />
+          <a><button style="background-color: #32c3d9">
+              <img class="mb-1" src="images/declare-income.png" />
+            </button>
+            <p>Declare income</p>
+          </a>
+
+          <hr />
+          <a><button style="background-color: #3852a3">
+              <img class="mb-1" src="images/check.png" />
+            </button>
+            <p>Email us</p>
+          </a>
+
+          <hr />
+          <a style="text-decoration: underline">Follow us on Facebook</a>
+        </aside>
+        <!-- form -->
+        <form id="login-form" class="mt-3 p-3">
+          <span id="err8">
+            <span class="error-msg" style="top: -5px; left: -173px; width: 245px">Bravo! Form with submit button</span>
+            <b style="text-align: center; display: block" class="mb-3">Contact us</b>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Type your name" required class="py-1" />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Type your email" required class="py-1" />
+            <label for="name">Inquiry</label>
+            <textarea id="inquiry" name="name" type="text" placeholder="How can we help you?" required rows="2"
+              maxlength="155" style="width: 100%"></textarea>
+            <span class="d-flex justify-content-center">
+              <button id="submit" type="submit" class="mt-2 py-1 px-3">
+                Submit
+              </button>
+            </span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- section 2 -->
+  <section class="py-5" id="section-2">
+    <div class="section-2 container d-flex justify-content-between">
+      <div id="left" class="d-flex mb-3">
+        <div id="err4" style="height: 254px">
+          <span class="error-msg" style="top: -45px; left: 209px; width: 274px">Bravo! The image has a poor
+            quality</span>
+          <img src="images/left.jpg" />
+        </div>
+        <div class="ms-3 mt-3">
+          <h5>Queen Elizabeth II Memorial Day public holiday</h5>
+          <p>
+            When we're open and when you'll be paid on the public holiday
+            observed Monday 26 September 2022. This public holiday marks the
+            State Memorial Service for Queen Elizabeth II.
+          </p>
+          <a>Find out more</a>
+        </div>
+      </div>
+      <div id="right" class="d-flex mb-3">
+        <div>
+          <img src="images/right.png" />
+        </div>
+        <div class="ms-3 mt-3">
+          <h5>Tuli Takes Flight scholarships</h5>
+          <p>
+            The Tuli Takes Flight scholarships are being awarded for the first
+            time this year. If you get one of these scholarships, it may
+            affect the payments you get from us.
+          </p>
+          <a>Find out more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container pt-4">
+      <div class="row pb-4">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 d-flex flex-column">
+          <p>How we can help</p>
+          <a>Starting study</a>
+          <a>In study</a>
+          <a>Returning to study</a>
+          <a>Finished studying</a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 d-flex flex-column">
+          <p>Online services</p>
+          <a>Eligibility test</a>
+          <a>MyStudyLink </a>
+          <a>Declare income </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 d-flex flex-column">
+          <p>About</p>
+          <a>About StudyLink </a>
+          <a>About this site </a>
+          <a>Access keys </a>
+          <a>Privacy, disclaimer and copyright </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 d-flex flex-column">
+          <p>Contact us</p>
+          <span>
+            <svg class="icon-home me-1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+              </path>
+            </svg>
+            <a>How to contact us </a></span>
+          <span>
+            <svg class="icon-home me-1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </svg>
+            <a>Facebook</a></span>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="py-5">
+      <div class="container d-flex justify-content-between">
+        <div>
+          <img src="images/footer-logo.png" width="250" height="60" class="me-4" />
+          <img src="images/nz-govt-logo .png" width="199" height="21" />
+        </div>
+        <div>
+          <img src="images/custom-logo.png" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WOW JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/wow.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- Index JS -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
